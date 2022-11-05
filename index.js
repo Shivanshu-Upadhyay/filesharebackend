@@ -10,7 +10,6 @@ dbConnect()
 // Routes
 app.use('/api',require('./router/files'))
 app.use('/api/file/download',require('./router/downloadFile'))
-
 app.listen(process.env.PORT||5001,()=>{
     console.log(`server running http://localhost:${PORT}`);
 })
