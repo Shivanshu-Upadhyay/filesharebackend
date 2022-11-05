@@ -10,7 +10,7 @@ dbConnect()
 // Routes
 app.use('/api',require('./router/files'))
 app.use('/api/file/download',require('./router/downloadFile'))
-app.post('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send("Welcome to FileShare")
 })
 app.listen(process.env.PORT||5001,()=>{
