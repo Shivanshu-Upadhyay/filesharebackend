@@ -5,7 +5,7 @@ const dbConnect = require('./config/db')
 const PORT = process.env.PORT || 5001
 const app = express()
 app.use(express.json())
-app.use(cors({origin:"https://fileshareonline.netlify.app"}))
+app.use(cors({origin:["https://fileshareonline.netlify.app","http://localhost:3000"]}))
 dbConnect()
 // Routes
 app.use('/api',require('./router/files'))
