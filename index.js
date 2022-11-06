@@ -13,6 +13,6 @@ app.use('/api/file/download',require('./router/downloadFile'))
 app.get('/',(req,res)=>{
     res.send("Welcome to FileShare")
 })
-app.listen(process.env.PORT||5001,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log(`server running http://localhost:${PORT}`);
 })
